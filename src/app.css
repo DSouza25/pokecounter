@@ -1,13 +1,26 @@
 .app{
-    width: 100vw;
+    background-color: black;
     height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
-.background{
-    background-image: url('./images/bg_pokemon.jpg');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vw;
-    width: 100vh;
-    transform: rotate(90deg);
+.bench{
+    height: 250px;
+    display: flex;
+    width: 90%;
+    z-index: 1;
+    justify-content: space-around;
+    align-items: center;
+}
+.counters{
+    height: 100px;
+    display: flex;
+    width: 90%;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
 }

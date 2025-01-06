@@ -1,0 +1,10 @@
+.background{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../../images/bg_pokemon.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .75;
+}
