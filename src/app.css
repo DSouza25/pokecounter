@@ -1,0 +1,13 @@
+.app{
+    width: 100vw;
+    height: 100vh;
+}
+.background{
+    background-image: url('./images/bg_pokemon.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vw;
+    width: 100vh;
+    transform: rotate(90deg);
+}
