@@ -1,0 +1,28 @@
+.coinContainer{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.front{
+    width: 100%;
+    height: 100%;
+    background-image: url('../../images/moeda\ frente.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+    position: absolute;
+}
+.back{
+    width: 100%;
+    height: 100%;
+    background-image: url('../../images/moeda\ costa.png');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: absolute;
+}

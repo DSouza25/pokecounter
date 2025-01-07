@@ -2,12 +2,18 @@ import './app.css';
 import Background from './components/Background';
 import Pokemon from './components/Pokemon';
 import Counter from './components/Counter';
+import Vastro from './components/Vastro';
+import Coin from './components/Coin';
 
 function App() {
   return (
     <div className="app">
       <Background/>
-      <Pokemon/>
+      <div className='fronLine'>
+        <Vastro/>
+        <Pokemon/>
+        <Coin/>
+      </div>
       <div className='bench'>
         <Pokemon/>
         <Pokemon/>

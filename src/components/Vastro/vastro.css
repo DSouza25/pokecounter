@@ -1,0 +1,11 @@
+.astroMark{
+    width: 200px;
+    height: 125px;
+    background-image: url('../../images/marcador\ v\ astro.png');
+    background-position: center center;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+    z-index: 1;
+    cursor: pointer;
+}

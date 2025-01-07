@@ -24,3 +24,10 @@
     justify-content: center;
     align-items: center;
 }
+.fronLine{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
