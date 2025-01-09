@@ -8,4 +8,40 @@
     filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
     z-index: 1;
     cursor: pointer;
+    animation: saltoinicial .2s normal;
+}
+.disable{
+    width: 200px;
+    height: 125px;
+    background-image: url('../../images/marcador\ v\ astro.png');
+    background-position: center center;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    z-index: 1;
+    cursor: pointer;
+    filter: saturate(0);
+    transition: .3s;
+    animation: salto .2s normal;
+}
+@keyframes salto {
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.1;
+    }
+    100%{
+        scale: 1;
+    }
+}
+@keyframes saltoinicial {
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.1;
+    }
+    100%{
+        scale: 1;
+    }
 }
