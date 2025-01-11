@@ -1,8 +1,16 @@
 import "./counter.css";
 
 export default function Counter(props){
+
+    const dragData = {
+        tipo: props.tipo,
+        valor: props.valor
+    }
+
+
     const handleDragStart = (event) => {
-        event.dataTransfer.setData("text/plain", "teste")
+        const serializedData = JSON.stringify(dragData);
+        event.dataTransfer.setData("application/json", serializedData);
     }
 
 
