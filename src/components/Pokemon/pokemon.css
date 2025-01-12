@@ -31,6 +31,9 @@
     width: 50px;
     border-radius: 50%;
     border: solid 10px #8d94c6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .leftLine{
     height: 10px;
@@ -45,4 +48,17 @@
     background-color: #8d94c6;
     position: absolute;
     left: 60%;
+}
+.damage{
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    color: yellow;
+    text-shadow: 0px 0px 5px red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    opacity: .9;
+    font-size: 6rem;
 }

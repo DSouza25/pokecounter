@@ -33,7 +33,6 @@ export default function Coin(){
 
     return(
         <div className='coinContainer'>
-            <p style={{color: 'white'}}>{status}  {nrandom}</p>
             <div className='coin' onClick={flip}>
                 <div className='front'></div>
                 <div className='back'></div>

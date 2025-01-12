@@ -27,9 +27,9 @@ function App() {
         <Counter valor={30} tipo="damage"/>
         <Counter valor={40} tipo="damage"/>
         <Counter valor={50} tipo="damage"/>
-        <Counter valor={50} tipo="poisoned"/>
-        <Counter valor={50} tipo="burned"/>
-        <Counter valor={50} tipo="asleep"/>
+        <Counter valor={0} tipo="poisoned"/>
+        <Counter valor={0} tipo="burned"/>
+        <Counter valor={0} tipo="asleep"/>
       </div>
     </div>
   );
