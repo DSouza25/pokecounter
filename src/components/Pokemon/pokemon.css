@@ -9,6 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .fundo{
     width: 223px;
@@ -61,4 +62,114 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     opacity: .9;
     font-size: 6rem;
+}
+.poisonBox{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.poisonEffect{
+    position: absolute;
+    background-color: purple;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    opacity: .2;
+    animation: poisoned 3.5s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bubbles{
+    width: 20px;
+    height: 20px;
+    border: 2px solid purple;
+    position: absolute;
+    border-radius: 50%;
+    animation: bubble 1.7s infinite;
+    opacity: 0;
+}
+.bubbles:nth-child(1n){
+    left: 10%;
+    bottom: 10%;
+}
+.bubbles:nth-child(2n){
+    width: 28px;
+    height: 28px;
+    left: 0%;
+    bottom: 20%;
+    animation-delay: .5s;
+}
+.bubbles:nth-child(3n){
+    width: 18px;
+    height: 18px;
+    left: 7%;
+    bottom: 15%;
+    animation-delay: .7s;
+}
+.bubbles:nth-child(4n){
+    top: 15%;
+    left: 80%;
+}
+.bubbles:nth-child(5n){
+    width: 20px;
+    height: 20px;
+    left: 75%;
+    bottom: 60%;
+    animation-delay: .2s;
+}
+.bubbles:nth-child(6n){
+    width: 18px;
+    height: 18px;
+    left: 85%;
+    bottom: 55%;
+}
+.bubbles:nth-child(7n){
+    width: 8px;
+    height: 8px;
+    left: 15%;
+    bottom: 70%;
+}
+.bubbles:nth-child(8n){
+    width: 18px;
+    height: 18px;
+    left: 25%;
+    top: 20%;
+}
+.bubbles:nth-child(9n){
+    width: 8px;
+    height: 8px;
+    left: 75%;
+    bottom: 10%;
+}
+.bubbles:nth-child(10n){
+    width: 18px;
+    height: 18px;
+    left: 80%;
+    top: 80%;
+}
+@keyframes bubble {
+    0%{
+        scale: 1;
+        opacity: 1;
+    }
+    100%{
+        scale: 2;
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+@keyframes poisoned {
+    0%{
+        opacity: .2;
+    }
+    50%{
+        opacity: .3;
+    }
+    100%{
+        opacity: .2;
+    }
 }

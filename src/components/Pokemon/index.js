@@ -5,6 +5,9 @@ export default function Pokemon(){
     const [ data, setDroppedData] = useState(null);
     const [dano, setDano] = useState(0);
     const [displayOn, setDisplayOn] = useState(false);
+    const [poisoned, setPoisoned] = useState(false);
+    const [burned, setBurned] = useState(false);
+    const [asleep, setAsleep] = useState(false);
 
     const handleDragOver = (event) => {
         event.preventDefault();
@@ -23,6 +26,9 @@ export default function Pokemon(){
         }else{
             setDisplayOn(false);
         }
+        if (dados.tipo === "poisoned") {
+            setPoisoned(!poisoned);
+        }
     }
     return(
         <div className='pokeBox' onDragOver={handleDragOver} onDrop={handleDrop}>
@@ -32,6 +38,19 @@ export default function Pokemon(){
             <div className='leftLine'></div>
             <div className='rightLine'></div>
             <p className='damage'>{displayOn?dano:''}</p>
+            {poisoned?<div class="poisonBox">
+                <div className='poisonEffect'></div>
+                <div className='bubbles'></div>
+                <div className='bubbles'></div>
+                <div className='bubbles'></div>
+                <div className='bubbles'></div>
+                <div className='bubbles'></div>
+                <div className='bubbles'></div>
+                <div className='bubbles'></div>
+                <div className='bubbles'></div>
+                <div className='bubbles'></div>
+                <div className='bubbles'></div>
+            </div>:''}
         </div>
     )
 }
