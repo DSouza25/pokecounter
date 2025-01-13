@@ -40,6 +40,13 @@ export default function Counter(props){
             <div className="asleep" draggable="true" onDragStart={handleDragStart}></div>
         )
     }
+    if(props.tipo === 'heal'){
+        return(
+            <div className="heal" draggable="true" onDragStart={handleDragStart}>
+                <p>{props.valor}</p>
+            </div>
+        )
+    }
     
 }
 

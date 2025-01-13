@@ -22,11 +22,12 @@ function App() {
         <Pokemon/>
       </div>
       <div className='counters'>
+        <Counter valor={-10} tipo="heal"/>
+        <Counter valor={-50} tipo="heal"/>
+        <Counter valor={-100} tipo="heal"/>
         <Counter valor={10} tipo="damage"/>
-        <Counter valor={20} tipo="damage"/>
-        <Counter valor={30} tipo="damage"/>
-        <Counter valor={40} tipo="damage"/>
         <Counter valor={50} tipo="damage"/>
+        <Counter valor={100} tipo="damage"/>
         <Counter valor={0} tipo="poisoned"/>
         <Counter valor={0} tipo="burned"/>
         <Counter valor={0} tipo="asleep"/>

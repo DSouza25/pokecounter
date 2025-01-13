@@ -13,10 +13,15 @@ export default function Pokemon(){
         event.preventDefault();
         const dados =JSON.parse(event.dataTransfer.getData("application/json"));
         setDroppedData(dados);
-        const soma = dano + dados.valor;
+        let soma = dano + dados.valor;
+        if(soma <0){
+            soma = 0;
+        }
         setDano(soma);
-        if (soma !== 0) {
+        if (soma > 0) {
             setDisplayOn(true);
+        }else{
+            setDisplayOn(false);
         }
     }
     return(
