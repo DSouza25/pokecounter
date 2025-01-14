@@ -32,6 +32,9 @@ export default function Pokemon(){
         if (dados.tipo === "burned") {
             setBurned(!burned);
         }
+        if (dados.tipo === "asleep") {
+            setAsleep(!asleep);
+        }
     }
     return(
         <div className='pokeBox' onDragOver={handleDragOver} onDrop={handleDrop}>
@@ -57,6 +60,11 @@ export default function Pokemon(){
                 <div className='bubbles'></div>
                 <div className='bubbles'></div>
                 <div className='bubbles'></div>
+            </div>:''}
+            {asleep?<div className='asleepEffect'>
+                <p className='zzZ'>Z</p>
+                <p className='zzZ'>Z</p>
+                <p className='zzZ'>Z</p>
             </div>:''}
         </div>
     )
