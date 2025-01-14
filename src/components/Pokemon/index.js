@@ -29,6 +29,9 @@ export default function Pokemon(){
         if (dados.tipo === "poisoned") {
             setPoisoned(!poisoned);
         }
+        if (dados.tipo === "burned") {
+            setBurned(!burned);
+        }
     }
     return(
         <div className='pokeBox' onDragOver={handleDragOver} onDrop={handleDrop}>
@@ -38,6 +41,10 @@ export default function Pokemon(){
             <div className='leftLine'></div>
             <div className='rightLine'></div>
             <p className='damage'>{displayOn?dano:''}</p>
+            {burned?<div className='burnedBox'>
+                <div className='burnedBackground'></div>
+                <div className='burnedEffect'></div>
+            </div>:''}
             {poisoned?<div class="poisonBox">
                 <div className='poisonEffect'></div>
                 <div className='bubbles'></div>

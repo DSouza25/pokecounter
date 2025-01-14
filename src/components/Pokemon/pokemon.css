@@ -173,3 +173,27 @@
         opacity: .2;
     }
 }
+.burnedBackground{
+    background-color: rgba(255, 0, 0, 0.245);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.burnedBox{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.burnedEffect{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../images/GlIU.gif');
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    mix-blend-mode: soft-light;
+}
