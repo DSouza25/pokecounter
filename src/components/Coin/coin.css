@@ -25,7 +25,6 @@
     background-position: center center;
     cursor: pointer;
     position: absolute;
-    backface-visibility: hidden;
 }
 .back{
     width: 100%;
@@ -36,7 +35,6 @@
     background-repeat: no-repeat;
     cursor: pointer;
     position: absolute;
-    backface-visibility: hidden;
     transform: rotateX(180deg);
 }
 .flipNormal{

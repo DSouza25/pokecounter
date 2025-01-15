@@ -2,40 +2,25 @@ import { useState } from 'react';
 import './coin.css';
 
 export default function Coin(){
-    const[status, setStatus] = useState(1);
-    const[nrandom, setNrandom] = useState(0)
-
-    
+    const [cara, setCara] = useState(true);
     function flip(){
         let coin = document.querySelector(".coin");
-        let random = Math.floor(Math.random()*11);
-        setNrandom(random);
-        if(random%2==0){
-            if(status == 1){
-                coin.classList.remove("flipNormal");
-                coin.classList.add("flipChange");
-            }else{
-                coin.classList.remove("flipChange");
-                coin.classList.add("flipNormal");
-            }
-            setStatus(2);
+        let random = Math.random();
+        coin.classList.add("flipNormal");
+        setTimeout(()=>{
+            coin.classList.remove("flipNormal");
+        }, 1000);
+        if(random >= 0.5){
+            setCara(false);
         }else{
-            if(status == 2){
-                coin.classList.remove("flipNormal");
-                coin.classList.add("flipChange");
-            }else{
-                coin.classList.remove("flipChange");
-                coin.classList.add("flipNormal");
-            }
-            setStatus(1);
+            setCara(true);
         }
     }
-
     return(
         <div className='coinContainer'>
             <div className='coin' onClick={flip}>
-                <div className='front'></div>
-                <div className='back'></div>
+                {cara?<div className='front'></div>:
+                <div className='back'></div>}
             </div>
         </div>
     )
