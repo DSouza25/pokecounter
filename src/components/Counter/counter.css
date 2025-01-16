@@ -47,7 +47,8 @@
     height: 80px;
     background-image: url('../../images/Asleep.png');
     background-position: center center;
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
     filter: drop-shadow( 0px 2px 4px rgba(0, 0, 0, 0.5));
     border-radius: 50%;
     cursor: grab;
@@ -89,4 +90,98 @@
     font-family: fantasy;
     font-size: 2rem;
     text-shadow: 0px 0px 2px yellowgreen;
+}
+@media (max-width: 740px){
+    .counterContainer{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: rgb(236, 217, 18);
+        border: 3px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: grab;
+        margin: 0px 10px;
+    }
+    .counterContainer > p{
+        color: whitesmoke;
+        font-weight: bold;
+        font-family: fantasy;
+        font-size: 1.3rem;
+        text-shadow: 0px 0px 5px red;
+    }
+    
+    .flame{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-image: url('../../images/chama.png');
+        background-position: center center;
+        background-size: contain;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: grab; 
+        position: relative;
+        filter: drop-shadow(0px 0px 5px rgb(0,0,0,.5));
+        
+    }
+    .burned{
+        width: 50px;
+        height: 50px;
+        background-color: rgb(192, 28, 3);
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        margin: 0px 10px;
+    }
+    
+    .asleep{
+        width: 50px;
+        height: 50px;
+        background-image: url('../../images/Asleep.png');
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: drop-shadow( 0px 2px 4px rgba(0, 0, 0, 0.5));
+        border-radius: 50%;
+        cursor: grab;
+        margin: 0px 10px;
+    }
+    .poison{
+        width: 50px;
+        height: 50px;
+        background-image: url('../../images/veneno\ verdadeiro.png');
+        background-position: center center;
+        background-size: contain;
+        filter: drop-shadow( 0px 2px 4px rgba(0, 0, 0, 0.5));
+        border-radius: 50%;
+        cursor: grab;
+    }
+    .poisoned{
+        width: 50px;
+        height: 50px;
+        background-color: #F7D2F8;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        margin: 0px 10px;
+    }
+    .heal{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: rgb(6, 163, 6);
+        border: 3px solid whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: grab;
+        margin: 0px 10px;
+    }
+    .heal > p{
+        color: whitesmoke;
+        font-weight: bold;
+        font-family: fantasy;
+        font-size: 1.3rem;
+    }
 }
