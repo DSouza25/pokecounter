@@ -30,7 +30,7 @@ export default function Counter(props){
     }
     if (props.tipo === "burned") {
         return(
-            <div className="burned" draggable="true" onDragStart={handleDragStart}>
+            <div className="burned" draggable="true" onTouchStart={handleDragStart} onDragStart={handleDragStart}>
                 <div className="flame"></div>
             </div>
         )

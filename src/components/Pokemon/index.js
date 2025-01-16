@@ -37,7 +37,7 @@ export default function Pokemon(){
         }
     }
     return(
-        <div className='pokeBox' onDragOver={handleDragOver} onDrop={handleDrop}>
+        <div className='pokeBox' onTouchEnd={handleDragOver} onDragOver={handleDragOver} onDrop={handleDrop}>
             <div className='fundo'></div>
             <div className='bigCircle'></div>
             <div className='smallCircle'></div>

@@ -240,7 +240,7 @@
         transform: translateY(0px);
     }
 }
-@media (max-width: 740px) {
+@media (max-width: 1000px) {
     .pokeBox{
         width: 110px;
         height: 110px;
